@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AccessingCSSInJS</title>
+
+<script>
+
+function f1()
+{
+var x=document.getElementById("para1");
+x.style.color="blue";
+if (y=confirm("Warning! I'll remove the whole paragraph and if you cancel I'll check it as blue..."))
+{
+x.innerHTML="";
+}
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+<h1>Heading!</h1>
+
+<p id="para1">Hey! I'm a paragraph and that it should be considered one of its best advantage and that it can be seen...</p>
+
+<button id="b1" onclick="f1()">Click Me</button>
+
+
+</body>
+
+</html>

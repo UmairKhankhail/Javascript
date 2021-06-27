@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+<script>
+
+function effect()
+{
+
+var x=document.getElementById("para1");
+x.style.backgroundColor="khaki";
+
+}
+
+function effectout()
+{
+
+var x=document.getElementById("para1");
+x.style.backgroundColor="white";
+}
+
+function effect1()
+{
+
+var x=document.getElementById("heading");
+x.style.backgroundColor="red";
+x.style.fontFamily="Helvetica";
+x.style.fontSize="50px";
+}
+
+function effect1out()
+{
+
+var x=document.getElementById("heading");
+x.style.backgroundColor="lightblue";
+x.style.fontFamily="normal";
+x.style.fontSize="20px";
+}
+</script>
+
+<h1 id="heading" onmouseover="effect1()" onmouseout="effect1out()">Paragraph</h1>
+<p id="para1" onmouseover="effect()" onmouseout="effectout()">Hey! I am an extraordinary paragrph and I work on the basis of event handling and change color when the mouse moves over me or the mouse out of. If you don't believe you can have a check, so let's try.</p>
+</body>
+
+</html>

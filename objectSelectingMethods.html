@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>methodsToSelectElement</title>
+</head>
+
+<script>
+
+function callelement()
+{
+var x=document.getElementById("heading");
+alert(x);
+}
+
+
+function callmultipleelements()
+{
+var x=document.getElementsByTagName("p");
+alert(x[0].innerHTML="I'm the first paragraph of the html but the modified form through .innerHTML");
+alert(x[1].innerHTML);
+}
+
+</script>
+
+<body>
+
+<h1 id="heading">I'm Heading Dear!</h1>
+<p id="para1">I am the first paragraph of the series or we can say of the html page.</p>
+<p id="para2">I am the second paragraph of the series or we can say of the html page.</p>
+<button onclick="callelement()">Click Me</button>
+<br/><br/>
+<button onclick="callmultipleelements()">Multiple Elements</button>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script>
+
+function validate()
+{
+
+var result=true;
+var emailid=document.getElementsByName("emailid")[0].value;
+var atindex=emailid.indexOf("@");
+var dotindex=emailid.lastIndexOf(".");
+if(atindex<1 || dotindex >= emailid.length-2 || dotindex-atindex <3)
+result= false;
+return result;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form onsubmit="return validate()">
+
+Email ID <input type="text" name="emailid" required />
+<input type="submit" name="submit"/>
+</form>
+
+</body>
+
+
+</html>

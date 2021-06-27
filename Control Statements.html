@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Control Statements</title>
+</head>
+
+<body>
+
+<script type="text/javascript" >
+x=-5
+if (x==5)
+{
+document.write(x+" is a positive number.");
+}
+else if (x==-5)
+{
+document.write(x+" is a negative number.");
+}
+else
+{
+document.write(x+" is neither equal to positive nor negative 5.");
+}
+document.write("<br/>");
+var i=1;
+while(i<=10)
+{
+document.write(5+" x "+i+" =  "+5*i+"<br/>");
+i++;
+}
+
+//if the first statement is true then exp1 will execute otherwise exp2 will execute.
+document.write("<br/>")
+p=-10
+p>0?document.write("The number is greater than zero."):document.write("The number is less than zero.")
+
+//This is while-do loop same as in C++
+
+document.write("<br/>")
+
+g=1
+do{
+document.write(2+" x "+g+" = "+2*g+"<br/>");
+g++;
+}while (g<=10);
+
+
+//Now let's practice about switch statements
+document.write("<br/>")
+switch (10)
+{
+case 5:
+document.write("The case switched here at case no:01");
+case 10:
+document.write("The case switched here at case no:02");
+default:
+document.write("<br/>This is default statement it will always run either the case switches at any of the case or not.");
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+document.write("Hey! I am JavaScript code. I am present in an externel file. I may be dangerous if you don't understant me quickly and correctly, without me you can't be a good web developer understood!")
